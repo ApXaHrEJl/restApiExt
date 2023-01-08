@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Vite + TS</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__title">Библиотека</div>
+
+      <nav class="nav">
+        <a href="#books" class="nav__link active" role="tab" id="tabBook">Книги</a>
+        <a href="#readers" class="nav__link" role="tab" id="tabReader">Читатели</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="tab" id="books">
+      <div class="tab__header">
+        <div class="tab__title">Книги</div>
+
+        <button class="btn" id="addBook">Добавить</button>
+      </div>
+
+      <div class="table__head">
+        <table class="table">
+          <thead class="table__thead">
+            <tr class="table__tr">
+              <th class="table__th">Название</th>
+              <th class="table__th">Автор</th>
+              <th class="table__th">Артикул</th>
+              <th class="table__th">Дата публикации</th>
+              <th class="table__th">Кол-во на складе</th>
+              <th class="table__th">Тираж</th>
+              <th class="table__th"></th>
+              <th class="table__th"></th>
+              <th class="table__th"></th>
+            </tr>
+          </thead>
+        </table>
+
+      </div>
+      <div class="table__body">
+        <table class="table">
+          <tbody class="table__tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="tab hide" id="readers">
+      <div class="tab__header">
+        <div class="tab__title">Читатели</div>
+
+        <button class="btn" id="addReader">Добавить</button>
+      </div>
+
+      <ul class="readers">
+      </ul>
+    </div>
+  </main>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
